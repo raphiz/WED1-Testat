@@ -13,7 +13,6 @@ git submodule add https://github.com/wasabideveloper/HSR.Template.Practises.git
 # update
 git submodule update
 ```
-JUST A TEST
 
 ## License
 
