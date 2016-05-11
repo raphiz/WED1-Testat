@@ -1,274 +1,294 @@
 <!DOCTYPE html>
 <html lang="de">
-	<head>
-		<meta charset="UTF-8">
-		<title>Wikipraktika | Taschenrechner - tragbare, handliche elektronische Rechenmaschine</title>
 
-		<!-- Meta Data -->
-		<meta name="author" content="Wikipraktika, Nikola Stankovic, Raphael Zimmermann" />
-		<meta name="description" content="TTaschenrechner: tragbare, handliche elektronische Rechenmaschine" />
-		<meta name="publisher" content="Wikipraktika" />
+<head>
+    <meta charset="UTF-8">
+    <title>Wikipraktika | Taschenrechner - tragbare, handliche elektronische Rechenmaschine</title>
 
-		<!-- Tab / bookmark icon -->
-		<link rel="icon" href="img/icon-wikipraktika.png" type="image/png" />
+    <!-- Meta Data -->
+    <meta name="author" content="Wikipraktika, Nikola Stankovic, Raphael Zimmermann" />
+    <meta name="description" content="Taschenrechner: tragbare, handliche elektronische Rechenmaschine" />
+    <meta name="publisher" content="Wikipraktika" />
 
-		<link rel="stylesheet" type="text/css" href="./css/styles.css">
-	</head>
-	<body>
-		<header>
-			<div id="head">
-				<img src="img/logo-wikipraktika.svg" alt="wikipraktika logo" style="float:left;margin-left:10px;margin-top:5px;">
-				<h1 style="float:left;">Wikipraktika</h1>
-			</div>
-		</header>
+    <!-- Tab / bookmark icon -->
+    <link rel="icon" href="img/icon-wikipraktika.png" type="image/png" />
 
-		<h2>Navigation</h2>
-		<nav>
-			<ul>
-				<li><a href="/de/">Hauptseite</a></li>
-				<li><a href="/de/topics/">Themenportale</a></li>
-				<li>Mitmachen
-    				<ul>
-    					<li><a href="/de/join/enhance-article/calculator">Artikel verbessern</a></li>
-    					<li><a href="/de/join/create-article">Neuen Artiekl anlegen</a></li>
-    					<li><a href="/de/join/author-portal">Autorenportal</a></li>
-    					<li><a href="/de/join/help">Hilfe</a></li>
-    					<li><a href="/de/join/last-changes/calculator">Letzte Änderungen</a></li>
-    					<li><a href="/de/join/contact">Kontakt</a></li>
-    					<li><a href="/de/join/donate">Spenden</a></li>
-    				</ul>
-                </li>
-				<li>Werkzeuge
-    				<ul>
-    					<li><a href="/de/calculator/tools/links-to-this-page">Links auf diese Seite</a></li>
-    					<li><a href="/de/calculator/tools/linked-changes">Änderungen an verlinkten Seiten</a></li>
-    					<li><a href="/de/calculator/tools/permanent-link">Permanenter Link</a></li>
-    					<li><a href="/de/calculator/tools/cite-article">Artiekl zitieren</a></li>
-    				</ul>
-                </li>
-				<li>In anderen Sprachen
-    				<ul id="language">
-    					<li class="it"><a href="/it/articles/calculator">Italiano</a></li>
-    					<li class="fr"><a href="/fr/articles/calculator">Français</a></li>
-    					<li class="en"><a href="/en/articles/calculator">English</a></li>
-    				</ul>
-                </li>
-			</ul>
-		</nav>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
 
-		<aside>
-			<!-- Schriftgrössenwechsler: optionale Aufgabe -->
-			<form id="font-size-form">
-				<label for="font-slider">Schriftgr&ouml;sse</label>
-				<input type="range" min="8" max="20" step="1" value="10" title="1" name="font-slider"
-					   id="font-slider" />
-				<output name="font-size" id="font-size">1</output>
-			</form>
-		</aside>
+<body>
+    <header>
+        <div id="head">
+            <a href=""><img src="img/logo-wikipraktika.svg" alt="wikipraktika logo" class="logo"></a>
+            <h1 style="float:left;">Wikipraktika</h1>
+        </div>
+    </header>
 
-		<main>
-			<h2>Taschenrechner</h2>
+    <nav>
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="/de/">Hauptseite</a></li>
+            <li><a href="/de/topics/">Themenportale</a></li>
+            <li>Mitmachen
+                <ul>
+                    <li><a href="/de/join/enhance-article/calculator">Artikel verbessern</a></li>
+                    <li><a href="/de/join/create-article">Neuen Artiekl anlegen</a></li>
+                    <li><a href="/de/join/author-portal">Autorenportal</a></li>
+                    <li><a href="/de/join/help">Hilfe</a></li>
+                    <li><a href="/de/join/last-changes/calculator">Letzte Änderungen</a></li>
+                    <li><a href="/de/join/contact">Kontakt</a></li>
+                    <li><a href="/de/join/donate">Spenden</a></li>
+                </ul>
+            </li>
+            <li>Werkzeuge
+                <ul>
+                    <li><a href="/de/calculator/tools/links-to-this-page">Links auf diese Seite</a></li>
+                    <li><a href="/de/calculator/tools/linked-changes">Änderungen an verlinkten Seiten</a></li>
+                    <li><a href="/de/calculator/tools/permanent-link">Permanenter Link</a></li>
+                    <li><a href="/de/calculator/tools/cite-article">Artiekl zitieren</a></li>
+                </ul>
+            </li>
+            <li>In anderen Sprachen
+                <ul id="language">
+                    <li hreflang="it"><a href="/it/articles/calculator">Italiano</a></li>
+                    <li hreflang="fr"><a href="/fr/articles/calculator">Français</a></li>
+                    <li hreflang="en"><a href="/en/articles/calculator">English</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
-			<article>
-				<header><h3>Taschenrechner</h3></header>
-				<p>Ein Taschenrechner ist eine tragbare, handliche elektronische Rechenmaschine,
-					mit deren Hilfe numerische Berechnungen ausgeführt werden können.
-					Einige neuere technisch-wissenschaftliche Taschenrechner beherrschen auch symbolische Mathematik mittels eines Computeralgebrasystems (CAS),
-					können also etwa Gleichungen umstellen oder lösen.
-                </p>
-                <p>
-					Praktisch alle heutigen Taschenrechner verwenden elektronische Integrierte Schaltungen und
-					LC-Displays als Anzeige und werden von einer Batterie oder Solarzelle mit Strom versorgt.
-                </p>
-                <figure class="left">
-    				<img src="img/900px-SCM_Marchant_calculator.jpg" alt="1960s SCM Marchant calculator" >
-    				<figcaption>By <a href="commons.wikimedia.org/wiki/User:Bilby">Bilby</a> - Own work, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>,
-    					https://commons.wikimedia.org/w/index.php?curid=10980797</figcaption>
-                </figure>
-                <h4>Geschichte</h4>
-                <p>
-					Bereits vor der Einführung der elektronischen Taschenrechner gab es einen Bedarf nach
-					tragbaren Rechenhilfen. Dieser wurde mit mechanischen Taschenrechnern und Rechenschiebern
-					befriedigt. Meist handelte es sich dabei um einfache Addiermaschinen. Auch
-					Vier-Spezies-Maschinen – also Rechenmaschinen, die Addition, Subtraktion, Multiplikation und
-					Division beherrschten – gab es in taschentauglicher Größe. Bekanntestes Beispiel ist die Curta.
-                </p>
-                <p>
-					Vorläufer der elektronischen Taschenrechner waren elektronische Tischrechner, bei denen der
-					Integrationsgrad der Schaltungstechnik noch geringer war und die deshalb größere Dimensionen
-					aufwiesen.
-                </p>
-                <p>
-					Der erste elektronische, tatsächlich handflächengroße Taschenrechner wurde 1967 von Texas
-					Instruments entwickelt.[1] Ein 1,5 kg schwerer Prototyp dieses ersten Taschenrechners ist
-					heute in der Smithsonian Institution ausgestellt. Auch dieser lief schon mit Batterien,
-					frühere Rechner benötigten einen Stromanschluss.
-					Die ersten kommerziell vertriebenen Taschenrechner wurden 1969
-					und 1970 von den japanischen Firmen Compucorp,
-					Sanyo, Sharp und Canon hergestellt.
-					Intel entwickelte für die japanische Firma Busicom einen der ersten Mikroprozessoren,
-					den Intel 4004, der 1971 auf den Markt kam und in dem Modell
-					Busicom 141-PF verwendet wurde.
-					Als erster Taschenrechner, der mit einem Verkaufspreis von 10.000 Yen für die breite Masse erschwinglich war,
-					gilt der 1972 veröffentlichte Casio Mini.[2] 1972 brachte Texas
-					Instruments den
-					Taschenrechner SR 10 mit dem eigenen Mikroprozessor TMS1000 heraus.
-					Diese Taschenrechner verfügten über wenig mehr als die vier Grundrechenarten.
-					1971 stellte Bowmar den ersten in den USA erhältlichen
-					Taschenrechner her (Bowmar 901B/„Bowmar Brain“, Maße: 131 mm ×77 mm × 37 mm).
-					Er hatte vier Funktionen und ein achtstelliges rotes LED-Display. Verkauft wurde er für 240 US$.
-					Bowmar musste 1976 schließen.
-                </p>
-                <p>
-					1972 erschien mit dem HP-35 von Hewlett-Packard der erste technisch-wissenschaftliche
-					Taschenrechner mit trigonometrischen, logarithmischen und Exponentialrechnungs-Funktionen. Er
-					wurde ein Verkaufserfolg und leitete das Ende der damals noch weit verbreiteten Rechenschieber ein.
-					Einer seiner Entwickler war Steve Wozniak, der wenige Jahre später das Unternehmen Apple mitgründete
-					und als Computer-Ingenieur die Entwicklung des Personal Computer maßgeblich beeinflusste.
-                </p>
-                <p>
-					Vor allem Hewlett Packard und Texas Instruments entwickelten ab 1974 auch programmierbare
-					Taschenrechner.
-                </p>
+    <aside>
+        <!-- Schriftgrössenwechsler: optionale Aufgabe -->
+        <form id="font-size-form">
+            <label for="font-slider">Schriftgr&ouml;sse</label>
+            <input type="range" min="8" max="20" step="1" value="15" title="1" name="font-slider" id="font-slider" />
+            <output name="font-size" id="font-size">15</output>
+        </form>
+    </aside>
 
-				<h4>Numerische Genauigkeit</h4>
-                <p>
-					Auch wenn heutige Taschenrechner im Regelfall kaum Programmfehler bei einfachen Berechnungen
-					aufweisen, lassen sich zwischen verschiedenen Taschenrechnermodellen unterschiedliche
-					Genauigkeiten und Auflösungen bei numerischen Berechnungen bestimmen.
-					Die Gründe liegen in den numerischen Näherungsverfahren (beispielsweise Horner-Schema und CORDIC),
-					mit denen beispielsweise transzendente Funktionen wie die Sinus-Funktion berechnet werden.
-					Genauer gesagt kommt es auf die Anzahl der abgespeicherten Koeffizienten für die Funktionsapproximationen an:
-					der dafür benötigte Speicherplatz war vor allem in der Anfangszeit ein extremer Engpass.
-					Diese kleinen Unterschiede in den Verfahren und unterschiedliche Genauigkeiten lassen sich auch
-					als Erkennungsmerkmal für eine bestimmte Firmware verwenden.
-                </p>
-                <p>
-					Beispielsweise liefert die numerische Berechnung von sin (22) in Radiant auf verschiedenen
-					Taschenrechnern voneinander abweichende Ergebnisse.
-                </p>
-				<footer><small>Source Wikipedia: <a href="https://de.wikipedia.org/wiki/Taschenrechner">de.wikipedia.org/wiki/Taschenrechner</a></small></footer>
-			</article>
+    <main>
+        <h2>Taschenrechner</h2>
 
-			<article>
-				<header><h3>Demonstration</h3></header>
-				calculator/index.html
-				<p><small>Casino Mini von 1972</small></p>
-			</article>
-			<article>
-				<header><h3>Bedienung des TI-Nspire CX CAS</h3></header>
-                <figure>
-    				<video poster="img/ti-nspire-cx-cas.png" controls>
-    					<source type="video/mp4" src="video/TI-Nspire CX CAS 3D Model.mp4" >
-    					<source type="video/ogg" src="video/TI-Nspire CX CAS 3D Model.webm" >
+        <article>
+            <header>
+                <h3>Taschenrechner</h3></header>
+            <p>Ein Taschenrechner ist eine tragbare, handliche elektronische Rechenmaschine, mit deren Hilfe numerische Berechnungen ausgeführt werden können. Einige neuere technisch-wissenschaftliche Taschenrechner beherrschen auch symbolische Mathematik
+                mittels eines Computeralgebrasystems (CAS), können also etwa Gleichungen umstellen oder lösen.
+            </p>
+            <p>
+                Praktisch alle heutigen Taschenrechner verwenden elektronische Integrierte Schaltungen und LC-Displays als Anzeige und werden von einer Batterie oder Solarzelle mit Strom versorgt.
+            </p>
+            <figure class="left">
+                <img src="img/900px-SCM_Marchant_calculator.jpg" alt="1960s SCM Marchant calculator">
+                <figcaption>By <a href="commons.wikimedia.org/wiki/User:Bilby">Bilby</a> - Own work, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, https://commons.wikimedia.org/w/index.php?curid=10980797
+                </figcaption>
+            </figure>
+            <h4>Geschichte</h4>
+            <p>
+                Bereits vor der Einführung der elektronischen Taschenrechner gab es einen Bedarf nach tragbaren Rechenhilfen. Dieser wurde mit mechanischen Taschenrechnern und Rechenschiebern befriedigt. Meist handelte es sich dabei um einfache Addiermaschinen. Auch
+                Vier-Spezies-Maschinen – also Rechenmaschinen, die Addition, Subtraktion, Multiplikation und Division beherrschten – gab es in taschentauglicher Größe. Bekanntestes Beispiel ist die Curta.
+            </p>
+            <p>
+                Vorläufer der elektronischen Taschenrechner waren elektronische Tischrechner, bei denen der Integrationsgrad der Schaltungstechnik noch geringer war und die deshalb größere Dimensionen aufwiesen.
+            </p>
+            <p>
+                Der erste elektronische, tatsächlich handflächengroße Taschenrechner wurde 1967 von Texas Instruments entwickelt.[1] Ein 1,5 kg schwerer Prototyp dieses ersten Taschenrechners ist heute in der Smithsonian Institution ausgestellt. Auch dieser lief schon
+                mit Batterien, frühere Rechner benötigten einen Stromanschluss. Die ersten kommerziell vertriebenen Taschenrechner wurden 1969 und 1970 von den japanischen Firmen Compucorp, Sanyo, Sharp und Canon hergestellt. Intel entwickelte für die
+                japanische Firma Busicom einen der ersten Mikroprozessoren, den Intel 4004, der 1971 auf den Markt kam und in dem Modell Busicom 141-PF verwendet wurde. Als erster Taschenrechner, der mit einem Verkaufspreis von 10.000 Yen für die breite
+                Masse erschwinglich war, gilt der 1972 veröffentlichte Casio Mini.[2] 1972 brachte Texas Instruments den Taschenrechner SR 10 mit dem eigenen Mikroprozessor TMS1000 heraus. Diese Taschenrechner verfügten über wenig mehr als die vier Grundrechenarten.
+                1971 stellte Bowmar den ersten in den USA erhältlichen Taschenrechner her (Bowmar 901B/„Bowmar Brain“, Maße: 131 mm ×77 mm × 37 mm). Er hatte vier Funktionen und ein achtstelliges rotes LED-Display. Verkauft wurde er für 240 US$. Bowmar
+                musste 1976 schließen.
+            </p>
+            <p>
+                1972 erschien mit dem HP-35 von Hewlett-Packard der erste technisch-wissenschaftliche Taschenrechner mit trigonometrischen, logarithmischen und Exponentialrechnungs-Funktionen. Er wurde ein Verkaufserfolg und leitete das Ende der damals noch weit verbreiteten
+                Rechenschieber ein. Einer seiner Entwickler war Steve Wozniak, der wenige Jahre später das Unternehmen Apple mitgründete und als Computer-Ingenieur die Entwicklung des Personal Computer maßgeblich beeinflusste.
+            </p>
+            <p>
+                Vor allem Hewlett Packard und Texas Instruments entwickelten ab 1974 auch programmierbare Taschenrechner.
+            </p>
 
-    					<track src="video/ti-nspire-subtitles.en.vtt" kind="subtitles" srclang="en" label="Untertitel Engslisch" default />
-    				</video>
-				    <figcaption>TI-Nspire CX CAS Demonstration</figcaption>
-                </figure>
-				<p> Von TheConnerdy, <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>,
-					<a href="https://www.youtube.com/watch?v=6gKkz4VkSgk">via Youtube</a></p>
-				<footer><small>Zuletzt geändert von Philipp Graf</small>
-					<small>Donnerstag, 11. Februar 2016, 12:45</small></footer>
-			</article>
+            <h4>Numerische Genauigkeit</h4>
+            <p>
+                Auch wenn heutige Taschenrechner im Regelfall kaum Programmfehler bei einfachen Berechnungen aufweisen, lassen sich zwischen verschiedenen Taschenrechnermodellen unterschiedliche Genauigkeiten und Auflösungen bei numerischen Berechnungen bestimmen. Die
+                Gründe liegen in den numerischen Näherungsverfahren (beispielsweise Horner-Schema und CORDIC), mit denen beispielsweise transzendente Funktionen wie die Sinus-Funktion berechnet werden. Genauer gesagt kommt es auf die Anzahl der abgespeicherten
+                Koeffizienten für die Funktionsapproximationen an: der dafür benötigte Speicherplatz war vor allem in der Anfangszeit ein extremer Engpass. Diese kleinen Unterschiede in den Verfahren und unterschiedliche Genauigkeiten lassen sich auch
+                als Erkennungsmerkmal für eine bestimmte Firmware verwenden.
+            </p>
+            <p>
+                Beispielsweise liefert die numerische Berechnung von sin (22) in Radiant auf verschiedenen Taschenrechnern voneinander abweichende Ergebnisse.
+            </p>
+            <p>
+                Source Wikipedia: <a href="https://de.wikipedia.org/wiki/Taschenrechner">de.wikipedia.org/wiki/Taschenrechner</a>
+            </p>
+        </article>
+
+        <article>
+            <header>
+                <h3>Demonstration</h3></header>
+            <figure>
+                <iframe src="module/calculator/index.html" class="calculator">
+
+                </iframe>
+
+                <figcaption>Casino Mini von 1972</figcaption>
+            </figure>
+        </article>
+        <article>
+            <header>
+                <h3>Bedienung des TI-Nspire CX CAS</h3></header>
+            <figure>
+                <video poster="img/ti-nspire-cx-cas.png" class="large" controls>
+                    <source type="video/mp4" src="video/TI-Nspire CX CAS 3D Model.mp4">
+                    <source type="video/ogg" src="video/TI-Nspire CX CAS 3D Model.webm">
+                    <track src="video/ti-nspire-subtitles.en.vtt" label="English subtitles" kind="subtitles" srclang="en" default>
+                </video>
+                <figcaption>TI-Nspire CX CAS Demonstration</figcaption>
+            </figure>
+            <p> Von TheConnerdy, <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>,
+                <a href="https://www.youtube.com/watch?v=6gKkz4VkSgk">via Youtube</a></p>
+            <footer>
+                Zuletzt geändert von Philipp Graf
+                <time datetime="2016-02-11T12:45">Donnerstag, 11. Februar 2016, 12:45</time>
+            </footer>
+        </article>
 
 
-			<article>
-				<header><h3>Taschenrechnervarianten</h3></header>
-				<p>Einfach
-					Grundrechenarten, Prozentrechnung
-					Finanzwirtschaft
-					Zinsrechnung, …
-					zum Beispiel der „Klassiker“ HP-12C (hergestellt seit 1981), HP 17 B (II) (hergestellt seit 1988
-					Boolesche Rechnungen
-					Rechnen mit Dual-, Oktal- und Hexadezimalzahlen, z. B. TI Programmer)
-					Wissenschaftlich
-					Winkelfunktionen, Logarithmus, mathematische Statistik, …
-					zum Beispiel TI-30 (seit 1976 dieselbe Typbezeichnung für intern völlig unterschiedliche Geräte
-					Programmierbarer Taschenrechner
-					Grafikfähiger Taschenrechner
-					Funktions-/Kurvendarstellung
-					ab 1985 Geräte von Casio (fx-Serie, aktuelles Modell fx 9860G SD)
-					1989 bis heute die HP-48-49-Reihe
-					ab 1993 der TI-82 und seine Nachfolger
-					aktuell der TI-84 Plus und TI-Nspire
-					Grafikrechner sind typischerweise auch programmierbar.
-					Computeralgebra-Rechner
-					grafikfähige Taschenrechner mit eingebautem Computeralgebra-Kern
-					erstes verbreitetes Gerät war der HP-48 von Hewlett-Packard (ab 1989),
-					spätere Geräte zum Beispiel TI-92(+) (ab 1995), TI-89 (ab
-					1998) und Voyage 200 (ab 2002), TI-Nspire CAS (ab 2007)
-					von Texas Instruments, ClassPad 300 von Casio, HP 49g+ von
-					Hewlett-Packard.</p>
+        <article>
+            <header>
+                <h3>Taschenrechnervarianten</h3></header>
+            <p>Einfach Grundrechenarten, Prozentrechnung Finanzwirtschaft Zinsrechnung, … zum Beispiel der „Klassiker“ HP-12C (hergestellt seit 1981), HP 17 B (II) (hergestellt seit 1988 Boolesche Rechnungen Rechnen mit Dual-, Oktal- und Hexadezimalzahlen,
+                z. B. TI Programmer) Wissenschaftlich Winkelfunktionen, Logarithmus, mathematische Statistik, … zum Beispiel TI-30 (seit 1976 dieselbe Typbezeichnung für intern völlig unterschiedliche Geräte Programmierbarer Taschenrechner Grafikfähiger
+                Taschenrechner Funktions-/Kurvendarstellung ab 1985 Geräte von Casio (fx-Serie, aktuelles Modell fx 9860G SD) 1989 bis heute die HP-48-49-Reihe ab 1993 der TI-82 und seine Nachfolger aktuell der TI-84 Plus und TI-Nspire Grafikrechner sind
+                typischerweise auch programmierbar. Computeralgebra-Rechner grafikfähige Taschenrechner mit eingebautem Computeralgebra-Kern erstes verbreitetes Gerät war der HP-48 von Hewlett-Packard (ab 1989), spätere Geräte zum Beispiel TI-92(+) (ab
+                1995), TI-89 (ab 1998) und Voyage 200 (ab 2002), TI-Nspire CAS (ab 2007) von Texas Instruments, ClassPad 300 von Casio, HP 49g+ von Hewlett-Packard.
+            </p>
 
-				<small>Taschenrechnervarianten, Source Wikipedia: <a href="https://de.wikipedia.org/wiki/Taschenrechner" >de.wikipedia.org/wiki/Taschenrechner</a></small>
+            <small>Taschenrechnervarianten, Source Wikipedia: <a href="https://de.wikipedia.org/wiki/Taschenrechner" >de.wikipedia.org/wiki/Taschenrechner</a></small>
 
-				<footer><small>Zuletzt geändert von Gabriela Kant</small>
-					<small>Donnerstag, 11. Februar 2016, 10:09</small></footer>
-			</article>
+            <footer>
+                Zuletzt geändert von Gabriela Kant
+
+                <time datetime="2016-02-11T10:09">Donnerstag, 11. Februar 2016, 10:09</time>
+            </footer>
+        </article>
 
 
-			<article>
-				<header><h3>Zeitgewinn</h3></header>
-				Zeitgewinn durch Benutzung eines Taschenrechners
+        <article>
+            <header>
+                <h3>Zeitgewinn</h3></header>
+                <table>
+                    <caption>
+                        Zeigewinn durch Benutzung eines Taschenrechners
+                    </caption>
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <th>2-Stellen</th>
+                            <th>3-Stellen</th>
+                            <th>4-Stellen</th>
+                        </tr>
+                        <tr>
+                            <td>Addition</td>
+                            <td>4</td>
+                            <td>8</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>Multiplikation</td>
+                            <td rowspan="2">15</td>
+                            <td rowspan="2">45</td>
+                            <td>240</td>
+                        </tr>
+                        <tr>
+                            <td>Division</td>
+                            <td>210</td>
+                        </tr>
+                        <tr>
+                            <td>Modulo</td>
+                            <td>5</td>
+                            <td>20</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>Quersumme</td>
+                            <td colspan="2">1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Wurzelziehen</td>
+                            <td colspan="3">Kaum machbar von Hand</td>
+                        </tr>
+                        <tr>
+                            <td>Potenzieren</td>
+                            <td>25</td>
+                            <td>75</td>
+                            <td>550</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-				2-Stellen	3-Stellen	4-Stellen
-				Addition / Subtraktion		4			8			20
-				Multiplikation				15			45			240
-				Division											210
-				Modulo						5			20			65
-				Quersumme							1				2
-				Wurzelziehen				Kaum machbar von Hand
-				Potenzieren					25			75			550
+            <figure class="middle">
+                <img src="img/zeitgewinn.svg" class="small" role="img"/>
+            </figure>
 
-				<img src="img/zeitgewinn.svg" />
+            <footer>
+                Zuletzt geändert von Leandra Gross
+                <time datetime="2016-02-29T13:02">Freitag, 29. Februar 2016, 13:02</time>
+            </footer>
+        </article>
 
-				<footer><small>Zuletzt geändert von Leandra Gross</small>
-					<small>Freitag, 29. Februar 2016, 13:02</small></footer>
-			</article>
+        <article>
+            <header>
+                <h3>iPhone calculator tricks</h3>
+            </header>
 
-			<article>
-				<header><h3>iPhone calculator tricks</h3></header>
+            <figure class="ratio-16-9">
+                <iframe src="https://www.youtube.com/embed/a7rcVgb41-0">
+                </iframe>
 
-				<!-- TODO: Definieren Sie die Höhe des Youtube-Video in Abhängigkeit der Seitenbreite.
-				Tipp: calc() → Höhe = 56.25% der Seitenbreite - Margins -->
-				<iframe width="420" height="315"
-						src="https://www.youtube.com/embed/a7rcVgb41-0">
-				</iframe>
+                <figcaption>iPhone Calculator Tricks on YouTube: <a href="https://www.youtube.com/watch?v=a7rcVgb41-0">youtube.com/watch?v=a7rcVgb41-0</a></figcaption>
+            </figure>
 
-				iPhone Calculator Tricks  on YouTube: youtube.com/watch?v=a7rcVgb41-0 (https://www.youtube.com/watch?v=a7rcVgb41-0)
 
-				<footer>
-					<small>Zuletzt ge&auml;ndert von Paul Sarner</small>
-					<small>Donnerstag, 10. Februar 2016, 18:38</small>
-				</footer>
-			</article>
+            <footer>
+                Zuletzt ge&auml;ndert von Paul Sarner
+                <time datetime="2016-02-10T18:38">Donnerstag, 10. Februar 2016, 18:38</time>
+            </footer>
+        </article>
 
-			<article>
-				<header><h3>Die besten und schlechtesten Taschenrechner</h3></header>
+        <article>
+            <header>
+                <h3>Die besten und schlechtesten Taschenrechner</h3>
+            </header>
 
-				<p>In einer 2014 durchgeführten Benutzerbefragung schnitten die Modelle von Casino am Besten ab:</p>
-				<ol>
-					<li>Casino UX5</li>
-					<li>Casino TZZ</li>
-					<li>Casino Basic</li>
-				</ol>
+            <p>
+                In einer 2014 durchgeführten Benutzerbefragung schnitten die Modelle von Casino am Besten ab:
+            </p>
+            <ol>
+                <li>Casino UX5</li>
+                <li>Casino TZZ</li>
+                <li>Casino Basic</li>
+            </ol>
 
-				<p>Am schlechtesten schnitten die Geräte von HG ab:</p>
-				<!-- TODO: Ordering Number muss 78, 77, 76 sein -->
-				<ol>
-					<li>HG Productive</li>
-					<li>HG Calc++</li>
-					<li>HG GO-ON</li>
-				</ol>
+            <p>
+                Am schlechtesten schnitten die Geräte von HG ab:
+            </p>
 
-				<footer>
-					<small>Zuletzt geändert von Petra Summer</small>
-					<small>Donnerstag, 11. Februar 2016, 14:13</small>
-				</footer>
-			</article>
-		</main>
+            <ol start="78" reversed>
+                <li>HG Productive</li>
+                <li>HG Calc++</li>
+                <li>HG GO-ON</li>
+            </ol>
 
-		<!-- TODO -->
-	</body>
+            <footer>
+                Zuletzt geändert von Petra Summer
+                <time datetime="2016-02-11T14:13">Donnerstag, 11. Februar 2016, 14:13</time>
+            </footer>
+        </article>
+    </main>
+    <script src="js/font-size.js" type="text/javascript"></script>
+    <!-- TODO -->
+</body>
+
 </html>
