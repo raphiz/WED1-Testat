@@ -101,6 +101,24 @@ main h3 {
     margin-top: 1.5rem;
 }
 
+/* Footer */
+body > footer a,
+body > footer a:hover {
+    left:0;
+    color: white;
+}
+
+body > footer {
+    padding: 1rem;
+    background-color: rgb(0, 96, 160);
+    color: white;
+}
+
+body > footer img {
+    vertical-align: middle;
+}
+
+
 /* Footer of articles */
 
 article footer {
@@ -138,9 +156,6 @@ figure.middle {
 }
 figure .small {
     width: 30%;
-}
-figure .medium {
-    width: 80%;
 }
 figure .large {
     width: 100%;
