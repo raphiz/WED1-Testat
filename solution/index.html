@@ -335,24 +335,25 @@
             <header>
                 <h3>Taschenrechner suchen nach Modell</h3>
             </header>
+
             <h4>Neuen Autor registrieren</h4>
             <fieldset>
-                <legend>Personalia:</legend>
-                <label for="sex-m">Herr</label> <input type="radio" name="sex" id="sex-m" value="Herr" checked>
-                <label for="sex-f">Frau</label> <input type="radio" name="sex" id="sex-f" value="Frau">
-                <label for="sex-f">Name</label>
-                <label for="sex-f">E-Mail</label>
-                <label for="sex-f">Website</label>
-                <label for="sex-f">Geburtsdatum</label>
-                <label for="sex-f">Nationalit&auml;t</label>
-                <select>
+                <legend>Autor</legend>
+                <label for="sex-m">Herr</label> <input type="radio" name="sex" id="sex-m" value="Herr" checked> <br>
+                <label for="sex-f">Frau</label> <input type="radio" name="sex" id="sex-f" value="Frau"> <br>
+                <label for="name">Name</label> <input type="text" name="name" id="name"> <br>
+                <label for="email">E-Mail</label> <input type="email" name="email" id="email"> <br>
+                <label for="website">Website</label> <input type="url" name="website" id="website"> <br>
+                <label for="b-day">Geburtsdatum</label> <input type="date" name="b-day" id="b-day"> <br>
+                <label for="nationality">Nationalit&auml;t</label> <br>
+                <select name="nationality" id="nationality">
                     <option>Switzerland</option>
     				<option>Deutschland</option>
     				<option>Frankreich</option>
     				<option>Italien</option>
     				<option>&Ouml;sterreich</option>
-                </select>
-                <label for="sex-f">Profiltext</label>
+                </select> <br>
+                <label for="profiletext">Profiltext</label> <br> <textarea name="profiletext" id="profiletext"></textarea>
             </fieldset>
         </article>
     </main>
