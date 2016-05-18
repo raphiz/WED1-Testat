@@ -126,8 +126,8 @@
         <article>
             <header>
                 <h3>Demonstration</h3></header>
-            <figure class="ratio-calc">
-                <iframe src="module/calculator/index.html">
+            <figure>
+                <iframe src="module/calculator/index.html" class="calculator">
 
                 </iframe>
 
@@ -287,8 +287,8 @@
                 <h3>iPhone calculator tricks</h3>
             </header>
 
-            <figure class="ratio-16-9">
-                <iframe src="https://www.youtube.com/embed/a7rcVgb41-0">
+            <figure>
+                <iframe src="https://www.youtube.com/embed/a7rcVgb41-0" class="youtube">
                 </iframe>
 
                 <figcaption>iPhone Calculator Tricks on YouTube: <a href="https://www.youtube.com/watch?v=a7rcVgb41-0">youtube.com/watch?v=a7rcVgb41-0</a></figcaption>
@@ -335,28 +335,35 @@
             <header>
                 <h3>Taschenrechner suchen nach Modell</h3>
             </header>
-
-            <h4>Neuen Autor registrieren</h4>
-            <fieldset>
-                <legend>Autor</legend>
-                <label for="sex-m">Herr</label> <input type="radio" name="sex" id="sex-m" value="Herr" checked>
-                <label for="sex-f">Frau</label> <input type="radio" name="sex" id="sex-f" value="Frau">
-                <label for="name">Name</label> <input type="text" name="name" id="name">
-                <label for="email">E-Mail</label> <input type="email" name="email" id="email">
-                <label for="website">Website</label> <input type="url" name="website" id="website">
-                <label for="b-day">Geburtsdatum</label> <input type="date" name="b-day" id="b-day">
-                <label for="nationality">Nationalit&auml;t</label>
-                <select name="nationality" id="nationality">
-                    <option>Switzerland</option>
-    				<option>Deutschland</option>
-    				<option>Frankreich</option>
-    				<option>Italien</option>
-    				<option>&Ouml;sterreich</option>
-                </select>
-                <label for="profiletext">Profiltext</label>
-                <textarea name="profiletext" id="profiletext"></textarea>
-            </fieldset>
-        </article>
+            <form>
+                <input type="text" name="search" class="search">
+                <input type="button" name="Search" value="Search">
+            </form>
+    </article>
+    <h1>Neuen Autor registrieren</h1>
+    <form action="" method="POST">
+        <fieldset>
+            <legend>Autor</legend>
+            <label for="sex-m">Herr</label> <input type="radio" name="sex" id="sex-m" value="Herr" checked>
+            <label for="sex-f">Frau</label> <input type="radio" name="sex" id="sex-f" value="Frau">
+            <label for="name">Name</label> <input type="text" name="name" id="name">
+            <label for="email">E-Mail</label> <input type="email" name="email" id="email">
+            <label for="website">Website</label> <input type="url" name="website" id="website">
+            <label for="b-day">Geburtsdatum</label> <input type="date" name="b-day" id="b-day">
+            <label for="nationality">Nationalit&auml;t</label>
+            <select name="nationality" id="nationality">
+                <option>Switzerland</option>
+    			<option>Deutschland</option>
+    			<option>Frankreich</option>
+    			<option>Italien</option>
+    			<option>&Ouml;sterreich</option>
+            </select>
+            <label for="profiletext">Profiltext</label>
+            <textarea name="profiletext" id="profiletext"></textarea>
+        </fieldset>
+        <input type="button" value="Account anlegen">
+        <input type="button" value="Eingabe zurücksetzen">
+    </form>
     </main>
     <footer>
         <address>
@@ -370,7 +377,6 @@
             <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a> und d&uuml;rfen nur mit Nennung des Autors weiterverwendet werden.</small>
     </footer>
     <script src="js/font-size.js" type="text/javascript"></script>
-    <!-- TODO: FOOTER -->
 </body>
 
 </html>
