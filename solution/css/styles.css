@@ -254,3 +254,17 @@ th {
     padding: 0;
     margin: 0;
 }
+
+.emphasizelist > li{
+    color: #0060a0;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.emphasizelist > li li{
+    color: black;
+    font-weight: normal;
+    list-style-type: disc;
+    list-style-image: url('../img/crosshair.png');
+    margin-left: 15px;
+}
