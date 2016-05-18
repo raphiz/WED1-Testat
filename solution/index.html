@@ -336,22 +336,22 @@
                 <h3>Taschenrechner suchen nach Modell</h3>
             </header>
             <form>
-                <input type="text" name="search" class="search">
-                <input type="button" name="Search" value="Search">
+                <input type="text" name="search">
+                <input type="button" name="Search" value="Search" class="search">
             </form>
     </article>
     <h1>Neuen Autor registrieren</h1>
     <form action="" method="POST">
         <fieldset>
             <legend>Autor</legend>
-            <label for="sex-m">Herr</label> <input type="radio" name="sex" id="sex-m" value="Herr" checked>
-            <label for="sex-f">Frau</label> <input type="radio" name="sex" id="sex-f" value="Frau">
-            <label for="name">Name</label> <input type="text" name="name" id="name">
-            <label for="email">E-Mail</label> <input type="email" name="email" id="email">
-            <label for="website">Website</label> <input type="url" name="website" id="website">
-            <label for="b-day">Geburtsdatum</label> <input type="date" name="b-day" id="b-day">
+            <label for="sex-m">Herr</label> <input type="radio" name="sex" id="sex-m" value="Herr" checked> <br>
+            <label for="sex-f">Frau</label> <input type="radio" name="sex" id="sex-f" value="Frau"><br>
+            <label for="name">Name</label> <input type="text" name="name" id="name" required>
+            <label for="email">E-Mail</label> <input type="email" name="email" id="email" required>
+            <label for="website">Website</label> <input type="url" name="website" id="website" required>
+            <label for="b-day">Geburtsdatum</label> <input type="date" name="b-day" id="b-day" required>
             <label for="nationality">Nationalit&auml;t</label>
-            <select name="nationality" id="nationality">
+            <select name="nationality" id="nationality" required>
                 <option>Switzerland</option>
     			<option>Deutschland</option>
     			<option>Frankreich</option>
@@ -359,9 +359,19 @@
     			<option>&Ouml;sterreich</option>
             </select>
             <label for="profiletext">Profiltext</label>
-            <textarea name="profiletext" id="profiletext"></textarea>
+            <textarea name="profiletext" id="profiletext" rows="10"></textarea>
+            <label for="profiletext">Profilbilder</label>
+            <input type="file" name="name" value="">
         </fieldset>
-        <input type="button" value="Account anlegen">
+        <fieldset>
+            <legend>Rechtliches</legend>
+            <label><input type="checkbox" name="copyright-text">Ich bestätige, das ich der Urheber des Textes bin</label><br>
+            <label><input type="checkbox" name="copyright-images">Ich bestätige, das ich der Urheber aller eingereichter Bilder bin</label><br>
+            <label><input type="checkbox" name="truth">Ich bestätige, das der Text nach bestem Treu und glauben der Wahrheit entspricht und die Bilder nicht manipuliert wurden</label>
+
+
+        </fieldset>
+        <input type="submit" value="Account anlegen">
         <input type="button" value="Eingabe zurücksetzen">
     </form>
     </main>
