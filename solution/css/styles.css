@@ -57,22 +57,22 @@ nav a, nav a:visited {
     text-decoration: underline;
     color: rgb(0, 96, 160);
 }
-#language li::before {
+#language a::before {
     content: "";
     width: 1rem;
     height: 0.8rem;
     margin-right: 0.3rem;
     display: inline-block;
 }
-#language li[hreflang="fr"]::before {
+#language a[hreflang="fr"]::before {
     background: url("../img/flag-fr.svg");
     background-size: 100%;
 }
-#language li[hreflang="it"]::before {
+#language a[hreflang="it"]::before {
     background: url("../img/flag-it.svg");
     background-size: 100%;
 }
-#language li[hreflang="en"]::before {
+#language a[hreflang="en"]::before {
     background: url("../img/flag-en.svg");
     background-size: 100%;
 }
@@ -159,6 +159,7 @@ figure .small {
 }
 figure .large {
     width: 100%;
+    max-width: 1000px;
     height: 100%;
 }
 
