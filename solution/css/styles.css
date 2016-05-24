@@ -225,6 +225,7 @@ th {
 
 /* forms */
 
+input[type=reset],
 input[type=button],
 input[type=submit]{
     color: white;
