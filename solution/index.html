@@ -335,13 +335,24 @@
             <header>
                 <h3>Taschenrechner suchen nach Modell</h3>
             </header>
-            <form>
-                <input type="text" name="search">
+            <form name="calcualtor-search-form">
+                <datalist id="calculators-list">
+                    <option>Mexico Instrument TI 30</option>
+                    <option>Mexico Instrument TI 32</option>
+                    <option>Mexico Instrument D*D</option>
+                    <option>Casino UX5</option>
+                    <option>Casino TZZ</option>
+                    <option>Casino Basic</option>
+                    <option>HG Calc++</option>
+                    <option>HG Productive</option>
+                    <option>HG GO-ON</option>
+                </datalist>
+                <input type="search" name="search" list="calculators-list">
                 <input type="button" name="Search" value="Search" class="search">
             </form>
     </article>
     <h1>Neuen Autor registrieren</h1>
-    <form action="" method="POST">
+    <form name="register_author">
         <fieldset>
             <legend>Autor</legend>
             <label for="sex-m">Herr</label> <input type="radio" name="sex" id="sex-m" value="Herr" checked> <br>
