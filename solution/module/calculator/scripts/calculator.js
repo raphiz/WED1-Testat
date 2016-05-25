@@ -28,15 +28,17 @@ function clearVariables() {
     left = 0;
     right = 0;
     operator = "";
+    currentVal = "";
 }
 
 /**
  * UI
  */
-$.ready(function() {
+$(document).ready(function() {
 
     var output = $("#output");
     var input = $("#input");
+    var currentVal = "";
     output.val("Welcome");
 
     $(".number").on('click', function () {
@@ -45,15 +47,17 @@ $.ready(function() {
         }
 
         input.append(this.value);
+        currentVal += this.value;
     });
 
     $(".operator").on('click', function () {
         if(operator === "") {
             operator = this.value;
-            left = input.val();
+            left = currentVal;
 
             output.append(left + " " + operator);
             input.val("");
+            currentVal = "";
         } else {
             operator = this.value;
 
@@ -68,16 +72,17 @@ $.ready(function() {
     $("#key-c").on('click', function () {
         input.val("");
         output.val("");
+        currentVal = "";
         clearVariables();
     });
 
     $("#key-equals").on('click', function () {
         if(left !== "") {
-            right = input.val();
+            right = currentVal;
 
-            var result = calculate(left, operator, right);
+            currentVal = calculate(left, operator, right);
 
-            input.val(result);
+            input.val(currentVal);
             output.val("");
 
             clearVariables();
