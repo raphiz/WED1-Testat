@@ -1,9 +1,7 @@
 /**
  * core
  */
-var left = "";
-var right = "";
-var operator = "";
+clearVariables();
 
 function calculate(left, operator, right) {
     var result = "Invalid calculation";
@@ -27,8 +25,8 @@ function calculate(left, operator, right) {
 }
 
 function clearVariables() {
-    left = "";
-    right = "";
+    left = 0;
+    right = 0;
     operator = "";
 }
 
