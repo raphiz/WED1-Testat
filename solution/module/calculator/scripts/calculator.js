@@ -48,7 +48,7 @@ window.addEventListener('load', function() {
     });
 
     $(".operator").on('click', function () {
-        if(operator == "") {
+        if(operator === "") {
             operator = this.value;
             left = $("#input").val();
 
@@ -64,15 +64,15 @@ window.addEventListener('load', function() {
             $(".output").val(result + operator);
         }
     });
-    
+
     $("#key-c").on('click', function () {
         $("#input").val("");
         $("#output").val("");
         clearVariables();
-    })
+    });
 
     $("#key-equals").on('click', function () {
-        if(left != "") {
+        if(left !== "") {
             right = $("#input").val();
 
             var result = calculate(left, operator, right);
@@ -84,5 +84,5 @@ window.addEventListener('load', function() {
         } else {
             $("#output").val("Invalid Calculation");
         }
-    })
+    });
 });
