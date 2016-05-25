@@ -1,8 +1,8 @@
 /**
  * core
  */
-var left = 0;
-var right = 0;
+var left = "";
+var right = "";
 var operator = "";
 
 function calculate(left, operator, right) {
@@ -10,7 +10,7 @@ function calculate(left, operator, right) {
 
     switch(operator) {
         case "+":
-            result = parseInt(left) + parseInt(right);
+            resultoutputseInt(left) + parseInt(right);
             break;
         case "-":
             result = parseInt(left) - parseInt(right);
@@ -35,54 +35,56 @@ function clearVariables() {
 /**
  * UI
  */
-window.addEventListener('load', function() {
+$.ready(function() {
 
-    $(".output").val("Welcome");
+    var output = $("#output");
+    var input = $("#input");
+    output.val("Welcome");
 
     $(".number").on('click', function () {
-        if($(".output").val() == "Welcome") {
-            $(".output").val("");
+        if(output.val() == "Welcome") {
+            output.val("");
         }
 
-        $("#input").append(this.value);
+        input.append(this.value);
     });
 
     $(".operator").on('click', function () {
         if(operator === "") {
             operator = this.value;
-            left = $("#input").val();
+            left = input.val();
 
-            $("#output").append(left + " " + operator);
-            $("#input").val("");
+            output.append(left + " " + operator);
+            input.val("");
         } else {
             operator = this.value;
 
-            var content = $(".output").val();
+            var content = output.val();
             var endSize = content.length -1;
             var result = content.substring(0, endSize);
 
-            $(".output").val(result + operator);
+            output.val(result + operator);
         }
     });
 
     $("#key-c").on('click', function () {
-        $("#input").val("");
-        $("#output").val("");
+        input.val("");
+        output.val("");
         clearVariables();
     });
 
     $("#key-equals").on('click', function () {
         if(left !== "") {
-            right = $("#input").val();
+            right = input.val();
 
             var result = calculate(left, operator, right);
 
-            $("#input").val(result);
-            $("#output").val("");
+            input.val(result);
+            output.val("");
 
             clearVariables();
         } else {
-            $("#output").val("Invalid Calculation");
+            output.val("Invalid Calculation");
         }
     });
 });
