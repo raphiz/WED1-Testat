@@ -302,16 +302,22 @@ fieldset {
     margin: 0;
 }
 
-.emphasizelist > li{
+dl dt{
     color: #0060a0;
     font-weight: bold;
     list-style-type: none;
 }
 
-.emphasizelist > li li{
-    color: black;
-    font-weight: normal;
-    list-style-type: disc;
-    list-style-image: url('../img/crosshair.png');
+dl dd{
     margin-left: 15px;
+}
+
+dl dd::before{
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.3rem;
+    display: inline-block;
+    background: url("../img/crosshair.png");
+    background-size: 100%;
 }
